@@ -1,0 +1,8 @@
+name: First Workflow   
+on: push                                         ### Event
+jobs:                                            ### Job
+  say-hello:                                     ### Job Name
+    runs-on: ubuntu-latest                       ### Runners
+    steps:                                       ### jobs under steps 
+      - name: Say My name
+        run: echo "Hello From Chandu, you are learning workflows with Github Actions"
